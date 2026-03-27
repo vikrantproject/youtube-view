@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Figtree:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-base: #F2F2F7;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+  --bg-card: #FFFFFF;
+  --text-primary: #1C1C1E;
+  --text-secondary: #8E8E93;
+  --text-tertiary: #C7C7CC;
+  --brand-primary: #007AFF;
+  --brand-hover: #0056B3;
+  --brand-active: #004080;
+  --status-success: #34C759;
+  --status-danger: #FF3B30;
+  --status-warning: #FFCC00;
+  --status-info: #5AC8FA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.prod-images.emergentagent.com/jobs/40567ed6-118a-4f0b-ac6c-ec88cc83c8ee/images/4842b8f16d120d1e04651da098ea8a4ae5be8486aa29c5439fe04bfa99e0ec78.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Neumorphic shadows */
+.neomorph-raised {
+  box-shadow: 6px 6px 12px #d1d1d6, -6px -6px 12px #ffffff;
+}
+
+.neomorph-pressed {
+  box-shadow: inset 4px 4px 8px #d1d1d6, inset -4px -4px 8px #ffffff;
+}
+
+.neomorph-float {
+  box-shadow: 8px 8px 16px #d1d1d6, -8px -8px 16px #ffffff, 0 4px 12px rgba(0,122,255,0.1);
+}
+
+/* Glass effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

@@ -1,0 +1,115 @@
+{
+  "theme": {
+    "mode": "light",
+    "archetype": "3 - Pastel & Soft (iOS Minimalist Hybrid)",
+    "description": "A refined, tactile, and clear dashboard emphasizing an iOS-inspired blend of Neumorphism for depth and Glassmorphism for contextual overlays. Heavy use of rounded corners, generous spacing, and crystal-clear hierarchy."
+  },
+  "colors": {
+    "background": {
+      "base": "#F2F2F7",
+      "glass": "rgba(255, 255, 255, 0.7)",
+      "card_solid": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#1C1C1E",
+      "secondary": "#8E8E93",
+      "tertiary": "#C7C7CC"
+    },
+    "brand": {
+      "primary": "#007AFF",
+      "primary_hover": "#0056B3",
+      "primary_active": "#004080"
+    },
+    "status": {
+      "success": "#34C759",
+      "danger": "#FF3B30",
+      "warning": "#FFCC00",
+      "info": "#5AC8FA"
+    },
+    "shadows": {
+      "neumorphic_flat": "6px 6px 12px #d1d1d6, -6px -6px 12px #ffffff",
+      "neumorphic_pressed": "inset 4px 4px 8px #d1d1d6, inset -4px -4px 8px #ffffff",
+      "glass": "0 8px 32px rgba(0, 0, 0, 0.08)",
+      "card_hover": "8px 8px 16px #d1d1d6, -8px -8px 16px #ffffff, 0 4px 12px rgba(0,122,255,0.1)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "'Outfit', sans-serif",
+      "body": "'Figtree', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl tracking-tight font-semibold",
+      "h2": "text-2xl md:text-3xl tracking-tight font-medium",
+      "h3": "text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-secondary uppercase tracking-[0.1em]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 py-12",
+    "grid_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "padding": {
+      "card": "p-6 sm:p-8",
+      "button": "px-6 py-3",
+      "input": "px-4 py-3"
+    },
+    "radius": {
+      "card": "rounded-3xl",
+      "button": "rounded-2xl",
+      "input": "rounded-2xl",
+      "pill": "rounded-full"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-brand-primary text-white rounded-2xl px-6 py-3 font-medium transition-all duration-200 hover:shadow-[0_8px_16px_rgba(0,122,255,0.3)] hover:-translate-y-0.5 active:translate-y-0 active:scale-95",
+      "neumorphic": "bg-[#F2F2F7] text-text-primary rounded-2xl px-6 py-3 font-medium transition-all duration-200 shadow-[6px_6px_12px_#d1d1d6,-6px_-6px_12px_#ffffff] hover:shadow-[8px_8px_16px_#d1d1d6,-8px_-8px_16px_#ffffff] active:shadow-[inset_4px_4px_8px_#d1d1d6,inset_-4px_-4px_8px_#ffffff]"
+    },
+    "cards": {
+      "neumorphic_widget": "bg-[#F2F2F7] rounded-3xl p-6 sm:p-8 shadow-[6px_6px_12px_#d1d1d6,-6px_-6px_12px_#ffffff] border border-white/50",
+      "glass_panel": "bg-white/70 backdrop-blur-2xl rounded-3xl p-6 sm:p-8 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
+    },
+    "inputs": {
+      "neumorphic_field": "bg-[#F2F2F7] rounded-2xl px-4 py-3 text-text-primary shadow-[inset_4px_4px_8px_#d1d1d6,inset_-4px_-4px_8px_#ffffff] border-none focus:outline-none focus:ring-2 focus:ring-brand-primary/50 transition-all placeholder:text-text-tertiary"
+    },
+    "progress_bar": {
+      "track": "h-3 w-full bg-[#F2F2F7] rounded-full shadow-[inset_2px_2px_4px_#d1d1d6,inset_-2px_-2px_4px_#ffffff]",
+      "fill": "h-full rounded-full bg-gradient-to-r from-brand-primary to-status-info shadow-[0_2px_8px_rgba(0,122,255,0.4)]"
+    },
+    "badges": {
+      "glass": "bg-white/50 backdrop-blur-md border border-white/60 rounded-full px-3 py-1 text-sm font-medium text-text-primary shadow-sm"
+    }
+  },
+  "animations": {
+    "hover": "transition-all duration-300 ease-out",
+    "click": "active:scale-95 active:shadow-inner",
+    "pulse_dot": "animate-pulse rounded-full h-2 w-2",
+    "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both"
+  },
+  "icons_library": "@phosphor-icons/react",
+  "media": {
+    "images": [
+      {
+        "id": "ios_abstract_bg",
+        "url": "https://static.prod-images.emergentagent.com/jobs/40567ed6-118a-4f0b-ac6c-ec88cc83c8ee/images/4842b8f16d120d1e04651da098ea8a4ae5be8486aa29c5439fe04bfa99e0ec78.png",
+        "description": "Abstract iOS 18 style soft gradient 3D background with pale blue, lavender, and pristine white colors.",
+        "usage": "Use this image as a subtle, fixed, screen-covering background behind the glassmorphic container/cards to create depth and visual interest, making the frosted glass effect 'pop'. Ensure it covers the full viewport (object-cover, fixed, -z-10)."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use standard HTML+Tailwind for custom Neumorphic components rather than fighting standard Shadcn cards. Shadcn is fine for functional parts like Select/Dialog.",
+    "The body must have a fixed background using the provided ios_abstract_bg image. This allows the Glassmorphic panels to have something beautiful to blur.",
+    "Apply `data-testid` to all interactive items (e.g. `data-testid='add-video-button'`, `data-testid='pause-job-button'`).",
+    "Dashboard layout: A 12-column or 4-column Control Room grid. Top widgets should be Glassmorphic or Neumorphic cards spanning 1 column each.",
+    "Active sessions panel should list jobs with thumbnails. Use the progress_bar styles provided for the watch progress.",
+    "Implement real-time WebSocket state using mock/frontend-simulated updates if backend isn't available, or connect to the actual backend.",
+    "For IPv6 badges, use the `badges.glass` style to keep the layout feeling premium and uncluttered.",
+    "Use Phosphor Icons (Weight: Duotone or Regular) for a high-end iOS aesthetic.",
+    "DO NOT use raw `#000000` or `#FFFFFF` everywhere for surfaces. Rely on the Neumorphic `#F2F2F7` and the shadow classes to construct depth.",
+    "Include an Educational Disclaimer modal or banner on first load using the Glassmorphic style.",
+    "Use custom values in tailwind.config.js to add the specific drop-shadows and box-shadows."
+  ]
+}
