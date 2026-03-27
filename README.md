@@ -52,8 +52,8 @@
 #### 1. Clone Repository
 
 ```bash
-git clone https://github.com/vikrant-project/youtube-view-1.git
-cd youtube-view-1
+git clone https://github.com/vikrantproject/youtube-view.git
+cd youtube-view
 ```
 
 #### 2. Run Setup Script (Ubuntu)
@@ -362,13 +362,13 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ## 📞 Support
 
-- 🐛 [Report Bug](https://github.com/vikrant-project/youtube-view-1/issues)
-- 💡 [Request Feature](https://github.com/vikrant-project/youtube-view-1/issues)
-- 💬 [Discussions](https://github.com/vikrant-project/youtube-view-1/discussions)
+- 🐛 [Report Bug](https://github.com/vikrantproject/youtube-view/issues)
+- 💡 [Request Feature](https://github.com/vikrantproject/youtube-view/issues)
+- 💬 [Discussions](https://github.com/vikrantproject/youtube-view/discussions)
 
 ## 👥 Authors
 
-- **Vikrant Project** - [@vikrant-project](https://github.com/vikrant-project)
+- **Vikrant Project** - [@vikrantproject](https://github.com/vikrantproject)
 
 ## 🙏 Acknowledgments
 
